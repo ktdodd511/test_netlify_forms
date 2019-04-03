@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Test Netlify Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="contact" method="POST" data-netlify="true">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" name="Email" class="form-control" id="contact-email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input name="Name" type="text" class="form-control" id="contact-text">
+            </div>
+            <div class="form-group">
+              <label for="Company">Company</label>
+              <input name="Company" type="text" class="form-control" id="contact-text">
+            </div>
+            <div class="form-group">
+              <label for="example-tel-input">Phone</label>
+              <input class="form-control" name="Phone" type="tel" placeholder="(555)-555-5555" id="example-tel-input">
+            </div>
+            <div class="form-group">
+            <label for="services">Select a Service</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2" name="Services" type="text">
+                <option>Dumpsters</option>
+                <option>Storage Containers</option>
+                <option>Portable Toilets</option>
+                <option>Equipment Rental</option>
+                <option>Debris Removal</option>
+                <option>Recycling Services</option>
+                <option>Temporary Fencing</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Questions/Comments</label>
+              <textarea name="Questions/Comments" type="text" class="form-control" id="contact-text" rows="3"></textarea>
+            </div>
+            <button type="submit" id="contact-submit" class="btn btn-primary mb-2">Submit</button>
+          </form>
+        </div>
+
+
+  </body>
+</html>
